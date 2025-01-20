@@ -1,0 +1,6 @@
+DIO_program.c:18:6:MGPIO_VidSetPinDirection	11
+DIO_program.c:72:6:MGPIO_VidSetPinValue	11
+DIO_program.c:113:6:MGPIO_u8GetPinValue	5
+DIO_program.c:154:6:MGPIO_VidSetPortDirection	11
+DIO_program.c:185:6:MGPIO_VidSetPortValue	11
+DIO_program.c:215:5:MGPIO_u16GetPortValue	11

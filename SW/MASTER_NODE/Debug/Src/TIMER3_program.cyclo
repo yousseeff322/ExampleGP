@@ -1,0 +1,5 @@
+TIMER3_program.c:12:6:MTIMER3_init	5
+TIMER3_program.c:41:6:MTIMER3_delay_ms	2
+TIMER3_program.c:50:6:MTIMER3_delay_us	2
+TIMER3_program.c:60:6:MTIMER3_PWM	6
+TIMER3_program.c:89:5:MTIMER3_PWM_PulseIn	13

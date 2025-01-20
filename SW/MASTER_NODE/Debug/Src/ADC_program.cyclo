@@ -1,0 +1,6 @@
+ADC_program.c:12:6:ADC_voidInit	3
+ADC_program.c:50:5:ADC_u16Read	3
+ADC_program.c:84:6:ADC_voidEnableInterrupt	1
+ADC_program.c:88:6:ADC_voidDisableInterrupt	1
+ADC_program.c:95:13:ADC_voidOn	1
+ADC_program.c:100:13:ADC_voidOff	1

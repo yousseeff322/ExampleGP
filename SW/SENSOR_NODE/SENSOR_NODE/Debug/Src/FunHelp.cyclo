@@ -1,0 +1,5 @@
+FunHelp.c:12:4:STR_COMPARE	9
+FunHelp.c:31:4:STR_LEN	2
+FunHelp.c:43:6:STR_COPY	2
+FunHelp.c:59:6:itoi	6
+FunHelp.c:105:5:map	1
