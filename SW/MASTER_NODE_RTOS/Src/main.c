@@ -86,18 +86,7 @@ void AEBTask(void *pvParameters) {
     SensorData_t receivedData;
 
     while (1) {
-        // Wait for new sensor data from CANReceiveTask
-        if (xQueueReceive(canQueue, &receivedData, portMAX_DELAY) == pdTRUE) {
-            if (receivedData.ultrasonic < 10 || (receivedData.LEFT_IR == White && receivedData.RIGHT_IR == White))
-            {
-                MotorDriver_voidStop(); // Stop the car using motor driver
-                BackLed_ON();
-                Alarm_ON();
-                vTaskDelay(pdMS_TO_TICKS(3000)); // Wait 3 seconds
-                BackLed_OFF();
-                Alarm_OFF();
-            }
-        }
+     
         vTaskDelay(pdMS_TO_TICKS(50));
     }
 }
@@ -107,17 +96,7 @@ void AEBTask(void *pvParameters) {
 void LKSTask(void *pvParameters) {
     SensorData_t receivedData;
     while (1) {
-        if (xQueueReceive(canQueue, &receivedData, portMAX_DELAY) == pdTRUE) {
-            if (receivedData.LEFT_IR == Black && receivedData.RIGHT_IR == Black) {
-                MotorDriver_voidMoveForward(); // Move forward
-            } else if (receivedData.LEFT_IR == Black && receivedData.RIGHT_IR == White) {
-                MotorDriver_voidMoveRight(); // Move right
-            } else if (receivedData.LEFT_IR == White && receivedData.RIGHT_IR == Black) {
-                MotorDriver_voidMoveLeft(); // Move left
-            }else {
-                MotorDriver_voidStop(); // Stop if unclear condition
-            }
-        }
+       
         vTaskDelay(pdMS_TO_TICKS(50));
     }
 }
@@ -126,15 +105,7 @@ void LKSTask(void *pvParameters) {
 void ACCTask(void *pvParameters) {
     SensorData_t receivedData;
     while (1) {
-        if (xQueueReceive(canQueue, &receivedData, portMAX_DELAY) == pdTRUE) {
-            if (receivedData.ultrasonic > 50) {
-                MotorDriver_voidControlSpeed(100); // Max speed
-            } else if (receivedData.ultrasonic >= 10 && receivedData.ultrasonic <= 50) {
-            	u8 adaptiveSpeed = (receivedData.ultrasonic - 10) * 2;
-            	adaptiveSpeed = (adaptiveSpeed > 100) ? 100 : adaptiveSpeed;
-            	MotorDriver_voidControlSpeed(adaptiveSpeed);
-            }
-        }
+      
         vTaskDelay(pdMS_TO_TICKS(50));
     }
 }
@@ -143,17 +114,7 @@ void ACCTask(void *pvParameters) {
 void ALCTask(void *pvParameters) {
     SensorData_t receivedData;
     while (1) {
-        if (xQueueReceive(canQueue, &receivedData, portMAX_DELAY) == pdTRUE) {
-            if (receivedData.LEFT_LDR >= 93) {
-                LEDS_SetMaxBrightness(); // Max lighting
-            } else if (receivedData.LEFT_LDR >= 80 && receivedData.LEFT_LDR < 93) {
-                LEDS_SetAdaptiveBrightness(receivedData.LEFT_LDR); // Adaptive lighting
-            } else if (receivedData.LEFT_LDR >= 20 && receivedData.LEFT_LDR < 80) {
-                LEDS_SetLowBrightness(); // Low brightness
-            } else {
-                LEDS_Off(); // Turn off LEDs
-            }
-        }
+     
         vTaskDelay(pdMS_TO_TICKS(50));
     }
 }
