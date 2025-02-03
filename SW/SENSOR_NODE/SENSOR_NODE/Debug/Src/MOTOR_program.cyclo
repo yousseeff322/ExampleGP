@@ -1,7 +1,0 @@
-MOTOR_program.c:21:6:MotorDriver_voidInit	1
-MOTOR_program.c:31:6:MotorDriver_voidControlSpeed	1
-MOTOR_program.c:40:6:MotorDriver_voidStop	1
-MOTOR_program.c:48:6:MotorDriver_voidMoveForward	1
-MOTOR_program.c:56:6:MotorDriver_voidMoveBackward	1
-MOTOR_program.c:64:6:MotorDriver_voidMoveRight	1
-MOTOR_program.c:72:6:MotorDriver_voidMoveLeft	1

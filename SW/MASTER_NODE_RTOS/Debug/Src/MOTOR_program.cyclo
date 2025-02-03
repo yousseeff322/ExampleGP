@@ -1,0 +1,9 @@
+MOTOR_program.c:11:6:MotorDriver_voidInit	1
+MOTOR_program.c:22:6:MotorDriver_voidControlSpeed	2
+MOTOR_program.c:34:6:MotorDriver_voidStop	1
+MOTOR_program.c:42:6:MotorDriver_voidMoveForward	1
+MOTOR_program.c:51:6:MotorDriver_voidMoveBackward	1
+MOTOR_program.c:60:6:MotorDriver_voidMoveRight	1
+MOTOR_program.c:69:6:MotorDriver_voidMoveLeft	1
+MOTOR_program.c:78:6:MotorDriver_voidMoveDiagonalLeft	1
+MOTOR_program.c:87:6:MotorDriver_voidMoveDiagonalRight	1

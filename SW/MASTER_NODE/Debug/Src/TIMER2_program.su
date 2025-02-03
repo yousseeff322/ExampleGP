@@ -1,3 +1,0 @@
-../Src/TIMER2_program.c:16:6:MTIMER2_init	16	static
-../Src/TIMER2_program.c:33:6:MTIMER2_delay_ms	16	static
-../Src/TIMER2_program.c:42:6:MTIMER2_delay_us	16	static

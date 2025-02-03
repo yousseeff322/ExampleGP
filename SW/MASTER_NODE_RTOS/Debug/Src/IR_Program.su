@@ -1,0 +1,3 @@
+../Src/IR_Program.c:9:6:IR_Init	16	static
+../Src/IR_Program.c:21:4:Left_IR_Measurement	8	static
+../Src/IR_Program.c:27:4:Right_IR_Measurment	8	static

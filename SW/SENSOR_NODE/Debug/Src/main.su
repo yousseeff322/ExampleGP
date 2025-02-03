@@ -1,0 +1,4 @@
+../Src/main.c:6:5:main	16	static
+../Src/main.c:24:6:SystemInit	8	static
+../Src/main.c:39:6:SensorReadTask	32	static
+../Src/main.c:71:6:CANSendTask	64	static

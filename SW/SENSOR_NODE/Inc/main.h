@@ -1,0 +1,63 @@
+#ifndef MAIN_H_
+#define MAIN_H_
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+										/*MCAL*/
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+#include "STD_type.h"
+#include "BIT_MATH.h"
+#include "RCC_interface.h"
+#include "DIO_interface.h"
+#include "NVIC_interface.h"
+#include "ADC_interface.h"
+#include "TIMER2_interface.h"
+#include "TIMER3_interface.h"
+#include "CAN_interface.h"
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+										/*HAL*/
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+#include "HULTRA_interface.h"
+#include "LDR_interface.h"
+#include "IR_Interface.h"
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+										/*RTOS*/
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include  <string.h>
+#include "timers.h"
+#include "semphr.h"
+
+
+
+/* Sensor data structure */
+typedef struct {
+    u16 LEFT_LDR;
+    u16 RIGTH_LDR;
+    u16 LEFT_IR;
+    u16 RIGTH_IR;
+    u16 ultrasonic;
+} SensorData_t;
+
+// FreeRTOS handles
+QueueHandle_t canQueue;
+SemaphoreHandle_t canSemaphore;
+
+
+/* Function prototypes */
+void SensorReadTask(void *pvParameters);
+void CANSendTask(void *pvParameters);
+void SystemInit(void) ;
+
+
+
+
+
+
+
+
+#endif

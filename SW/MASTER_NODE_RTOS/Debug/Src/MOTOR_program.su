@@ -1,0 +1,9 @@
+../Src/MOTOR_program.c:11:6:MotorDriver_voidInit	8	static
+../Src/MOTOR_program.c:22:6:MotorDriver_voidControlSpeed	24	static
+../Src/MOTOR_program.c:34:6:MotorDriver_voidStop	8	static
+../Src/MOTOR_program.c:42:6:MotorDriver_voidMoveForward	8	static
+../Src/MOTOR_program.c:51:6:MotorDriver_voidMoveBackward	8	static
+../Src/MOTOR_program.c:60:6:MotorDriver_voidMoveRight	8	static
+../Src/MOTOR_program.c:69:6:MotorDriver_voidMoveLeft	8	static
+../Src/MOTOR_program.c:78:6:MotorDriver_voidMoveDiagonalLeft	8	static
+../Src/MOTOR_program.c:87:6:MotorDriver_voidMoveDiagonalRight	8	static

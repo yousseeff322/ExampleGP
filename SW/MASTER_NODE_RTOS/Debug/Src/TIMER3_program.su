@@ -1,0 +1,5 @@
+../Src/TIMER3_program.c:10:6:MTIMER3_init	16	static
+../Src/TIMER3_program.c:40:6:MTIMER3_delay_ms	16	static
+../Src/TIMER3_program.c:49:6:MTIMER3_delay_us	16	static
+../Src/TIMER3_program.c:59:6:MTIMER3_PWM	16	static
+../Src/TIMER3_program.c:88:5:MTIMER3_PWM_PulseIn	24	static

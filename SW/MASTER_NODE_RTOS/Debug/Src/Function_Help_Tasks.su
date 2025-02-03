@@ -1,0 +1,8 @@
+../Src/Function_Help_Tasks.c:10:6:BackLed_ON	8	static
+../Src/Function_Help_Tasks.c:14:6:BackLed_OFF	8	static
+../Src/Function_Help_Tasks.c:18:6:Alarm_ON	8	static
+../Src/Function_Help_Tasks.c:22:6:Alarm_OFF	8	static
+../Src/Function_Help_Tasks.c:28:6:LEDS_SetMaxBrightness	8	static
+../Src/Function_Help_Tasks.c:32:6:LEDS_SetAdaptiveBrightness	24	static
+../Src/Function_Help_Tasks.c:37:6:LEDS_SetLowBrightness	8	static
+../Src/Function_Help_Tasks.c:41:6:LEDS_Off	8	static

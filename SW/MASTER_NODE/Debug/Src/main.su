@@ -1,3 +1,0 @@
-../Src/main.c:8:6:main	40	static,ignoring_inline_asm
-../Src/main.c:39:6:Task1Handler	16	static
-../Src/main.c:52:6:Task2Handler	16	static
